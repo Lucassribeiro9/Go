@@ -35,8 +35,29 @@ func hora() {
 		fmt.Println("Boa noite")
 	}
 }
+func tipo(i interface{}) string {
+	switch i.(type) {
+	case int:
+		return "inteiro"
+	case float32, float64:
+		return "real"
+	case string:
+		return "string"
+	case func():
+		return "função"
+	default:
+		return "to não"
+	}
+}
 
 func main() {
 	fmt.Println(notaConceito(10))
 	hora()
+	fmt.Println(tipo(2.3))
+	fmt.Println(tipo(1))
+	fmt.Println("Opa")
+	fmt.Println(tipo(func() {
+
+	}))
+	fmt.Println(tipo(time.Now()))
 }
