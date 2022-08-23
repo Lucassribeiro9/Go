@@ -4,7 +4,7 @@ import "fmt"
 
 func notaParaConceito(n float64) string {
 	switch {
-	case n >= 9:
+	case n >= 9 && n <= 10:
 		return "A"
 	case n >= 8 && n <= 9:
 		return "B"
@@ -19,5 +19,5 @@ func notaParaConceito(n float64) string {
 }
 
 func main() {
-	fmt.Println(notaParaConceito(2))
+	fmt.Println(notaParaConceito(10))
 }
