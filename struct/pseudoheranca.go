@@ -16,5 +16,5 @@ func main() {
 	f.nome = "F40"
 	f.velocidadeAtual = 0
 	f.turboLigado = true
-	fmt.Println("A ferrari %s está com o turbo ligado? %v\n", f.nome, f.turboLigado)
+	fmt.Printf("A ferrari %s está com o turbo ligado? %v\n", f.nome, f.turboLigado)
 }
