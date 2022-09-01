@@ -9,18 +9,20 @@ func (n nota) entre(inicio, fim float64) bool {
 }
 
 func notaParaConceito(n nota) string {
-	if n.entre(9.0, 10.0) {
+	switch {
+	case n.entre(9.0, 10.0):
 		return "A"
-	} else if n.entre(7.0, 8.99) {
+	case n.entre(7.0, 8.99):
 		return "B"
-	} else if n.entre(5.0, 7.99) {
+	case n.entre(5.0, 7.99):
 		return "C"
-	} else if n.entre(3.0, 4.99) {
+	case n.entre(3.0, 4.99):
 		return "D"
-	} else {
+	default:
 		return "E"
 	}
+
 }
 func main() {
-	fmt.Println(notaParaConceito(8.2))
+	fmt.Println(notaParaConceito(6.2))
 }
