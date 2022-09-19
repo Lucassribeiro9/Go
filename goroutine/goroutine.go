@@ -14,7 +14,7 @@ func fale(pessoa, texto string, qtde int) {
 
 func main() {
 	go fale("Maria", "Ei", 500)
-	go fale("João", "Opa", 500)
-	time.Sleep(time.Second * 5)
-	fmt.Println("Fim!")
+	fale("João", "Opa", 500)
+	//	time.Sleep(time.Second * 5)
+	//	fmt.Println("Fim!")
 }
