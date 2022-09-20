@@ -27,6 +27,5 @@ func main() {
 		html.Titulo("https://www.uol.com.br", "https://www.youtube.com"),
 	)
 	fmt.Println(<-c, "|", <-c)
-	fmt.Println(<-c, "|", <-c)
 
 }
