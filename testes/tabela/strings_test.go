@@ -8,6 +8,7 @@ import (
 const msgErro = "%s (parte: %s) - índices: esperando (%d) <> encontrado (%d)"
 
 func TestIndex(t *testing.T) {
+	t.Parallel()
 	testes := []struct {
 		texto    string
 		parte    string
